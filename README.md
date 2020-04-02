@@ -28,9 +28,9 @@
    * 本日の運勢を占えるゲーム  
 
   <コードの特徴>  
-   * random.choiceで、運勢をランダムに選択<br>
-   * label.updateで、label表示の切り替え<br>
- * Chapter7<br>
+   * random.choiceで、運勢をランダムに選択  
+   * label.updateで、label表示の切り替え  
+ * Chapter7  
    診断ゲーム<br>
   <説明>
    * 当てはまる物にチェックを入れて、診断するゲーム<br>
