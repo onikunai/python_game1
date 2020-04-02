@@ -16,11 +16,11 @@
 
 ### *各chapterの説明*
 ---
-## Chapter1〜5
+#### Chapter1〜5
  CUIで、if文・for文などの処理の練習
 <br>
 
-## Chapter6以降
+#### Chapter6以降
  GUIを使用したgame
  * Chapter6<br>
    おみくじソフト
