@@ -23,16 +23,16 @@
 #### Chapter6以降
  GUIを使用したgame
  * Chapter6  
-   おみくじソフト  
+  おみくじソフト  
   <説明>  
-   * 本日の運勢を占えるゲーム  
+    * 本日の運勢を占えるゲーム  
 
   <コードの特徴>  
-   * random.choiceで、運勢をランダムに選択  
-   * label.updateで、label表示の切り替え  
+    * random.choiceで、運勢をランダムに選択  
+    * label.updateで、label表示の切り替え  
  * Chapter7  
-   診断ゲーム<br>
-  <説明>
+   診断ゲーム  
+  <説明>  
    * 当てはまる物にチェックを入れて、診断するゲーム<br>
   <コードの特徴>
    * BooleanVarのオブジェクト用リストの実装<br>
