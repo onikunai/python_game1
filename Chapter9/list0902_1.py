@@ -1,13 +1,33 @@
 import tkinter
-tmr = 0
-def count_up():
-    global tmr
-    tmr = tmr + 1
-    label["text"] = tmr
-    root.after(1000, count_up)
+
+mouse_x = 0
+mouse_y = 0
+mouse_c = 0
+
+def mouse_move(e):
+    global mouse_x, mouse_y
+    mouse_x = e.x
+    mouse_y = e.y
+
+def mouse_press(e):
+    global mouse_c
+    mouse_c = 1
+
+def mouse_release(e):
+    global mouse_c
+    mouse_c = 0
+
+def game_main():
+    fnt = ("Times New Roman", 30)
+    txt = "mouse({},{}){}".format(mouse_x, mouse_y, mouse_c)
+    cvs.delete("TEST")
+    cvs.create_text(456, 384, text=txt, fill="black", font=fnt, tag="TEST")
+    root.after(100, game_main)
 
 root = tkinter.Tk()
-label = tkinter.Label(font=("Times New Roman", 80))
-label.pack()
-root.after(1000, count_up)
+root.title("マウス入力")
+root.resizable(False, False)
+
+
+
 root.mainloop()
