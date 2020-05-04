@@ -27,7 +27,10 @@ def game_main():
 root = tkinter.Tk()
 root.title("マウス入力")
 root.resizable(False, False)
-
-
-
+root.bind("<Motion>", mouse_move)
+root.bind("<ButtonPress>", mouse_press)
+root.bind("<ButtonRelease>", mouse_release)
+cvs = tkinter.Canvas(root, width=912, height=768)
+cvs.pack()
+game_main()
 root.mainloop()
